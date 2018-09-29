@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 export default class ListPatientHistory extends Component {
+    constructor(props) {
+        super(props);
+        
+    }
     render() {
         return (
             <div>
@@ -16,7 +20,7 @@ export default class ListPatientHistory extends Component {
                                                 <div className="listar-reviewcontent">
                                                     <div className="listar-reviewhead">
                                                         <div className="listar-reviewheading">
-                                                            <h3><a href="javascript:void(0);">0xb05dbba60ba029be2d4fca9152ff720ce7f2697e</a></h3>
+                                                            <h3><a href="javascript:void(0);">{`${root}/patient/`}</a></h3>
                                                         </div>
                                                         <div className="row" style={{ paddingTop: '10px' }}>
                                                             <div className="col-md-6">
