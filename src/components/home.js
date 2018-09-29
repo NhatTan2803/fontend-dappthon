@@ -8,7 +8,6 @@ export default class Home extends Component {
                     <div className="pin" />
                     <div className="pulse" />
                 </div>
-
                 <div id="listar-wrapper" className="listar-wrapper listar-haslayout">
 
                     <header id="listar-header" className="listar-header cd-auto-hide-header listar-haslayout">
@@ -94,8 +93,8 @@ export default class Home extends Component {
                                                     <div className="form-group listar-inputwithicon">
                                                         <i className="icon-global" />
                                                         <div className="listar-select listar-selectlocation">
-                                                            <select id="listar-locationchosen" className="listar-locationchosen">
-                                                                <option>Address </option>
+                                                            <select id="listar-locationchosen" className="listar-locationchosen ">
+                                                                <option>Address</option>
                                                             </select>
                                                         </div>
                                                     </div>
