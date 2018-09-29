@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ListPatientHistory from './listPatientHistorys';
 
 export default class Home extends Component {
     render() {
@@ -9,26 +10,25 @@ export default class Home extends Component {
                     <div className="pulse" />
                 </div>
                 <div id="listar-wrapper" className="listar-wrapper listar-haslayout">
-
                     <header id="listar-header" className="listar-header cd-auto-hide-header listar-haslayout">
                         <div className="container">
                             <div className="row">
                                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
+                                    <h2 class="listar-logo"><a href="index.html">Chainpital</a></h2>
                                     <nav className="listar-addnav">
                                         <ul>
                                             <li>
                                                 <a id="listar-btnsignin" className="listar-btn listar-btnblue" href="#listar-loginsingup">
-                                                    <i className="icon-smiling-face" />
-                                                    <span>Join Now</span>
+                                                    <i class="fas fa-phone-volume"></i>
+                                                    <span>Call Now</span>
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a className="listar-btn listar-btngreen" href="dashboardaddlisting.html">
-                                                    <i className="icon-plus" />
-                                                    <span>Add Listing</span>
-                                                </a>
-                                            </li>
+                                            {/* <li>
+                                                    <a className="listar-btn listar-btngreen" href="dashboardaddlisting.html">
+                                                        <i className="icon-plus" />
+                                                        <span>Add Listing</span>
+                                                    </a>
+                                                </li> */}
 
                                         </ul>
                                     </nav>
@@ -47,8 +47,93 @@ export default class Home extends Component {
                                                     <a href="javascript:void(0);">Home</a>
                                                     <ul className="sub-menu">
                                                         <li className="current-menu-item"><a href="index.html">Home v 1</a></li>
+                                                        <li><a href="indexv2.html">Home v 2</a></li>
+                                                        <li><a href="indexv3.html">Home v 3</a></li>
+                                                        <li><a href="indexv4.html">Home v 4</a></li>
                                                     </ul>
                                                 </li>
+                                                <li className="menu-item-has-children">
+                                                    <a href="javascript:void(0);">Doctors</a>
+                                                    <ul className="sub-menu">
+                                                        <li><a href="listingvlist.html">All Listings</a></li>
+                                                        <li className="menu-item-has-children">
+                                                            <a href="javascript:void(0);">Food</a>
+                                                            <ul className="sub-menu">
+                                                                <li><a href="listingv1.html">Cafe</a></li>
+                                                                <li><a href="listingv2.html">Restaurant</a></li>
+                                                                <li><a href="listingv1.html">Dinner</a></li>
+                                                                <li><a href="listingv2.html">Pizza Place</a></li>
+                                                                <li><a href="listingv1.html">Italian</a></li>
+                                                                <li><a href="listingv2.html">Bakeries</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li className="menu-item-has-children">
+                                                            <a href="javascript:void(0);">Entertainment</a>
+                                                            <ul className="sub-menu">
+                                                                <li><a href="listingv1.html">Art &amp; Design</a></li>
+                                                                <li><a href="listingv2.html">Movie Theater</a></li>
+                                                                <li><a href="listingv1.html">Theme Parks</a></li>
+                                                                <li><a href="listingv2.html">Music Life</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li className="menu-item-has-children">
+                                                            <a href="javascript:void(0);">Educational</a>
+                                                            <ul className="sub-menu">
+                                                                <li><a href="listingv1.html">School</a></li>
+                                                                <li><a href="listingv2.html">College</a></li>
+                                                                <li><a href="listingv1.html">University</a></li>
+                                                                <li><a href="listingv2.html">Short Courses</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li className="menu-item-has-children">
+                                                            <a href="javascript:void(0);">Nightlife</a>
+                                                            <ul className="sub-menu">
+                                                                <li><a href="listingv1.html">Wine Bars</a></li>
+                                                                <li><a href="listingv2.html">Pubs</a></li>
+                                                                <li><a href="listingv1.html">Nightclub</a></li>
+                                                                <li><a href="listingv2.html">Lounge</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li className="menu-item-has-children">
+                                                            <a href="javascript:void(0);">Outdoors</a>
+                                                            <ul className="sub-menu">
+                                                                <li><a href="listingv1.html">Boutiques</a></li>
+                                                                <li><a href="listingv2.html">Fashion</a></li>
+                                                                <li><a href="listingv1.html">Furniture</a></li>
+                                                                <li><a href="listingv2.html">Sport Equipment</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li className="menu-item-has-children">
+                                                    <a href="javascript:void(0);">Departments</a>
+                                                    <ul className="sub-menu">
+                                                        <li><a href="howitwork.html">How It Works</a></li>
+                                                        <li><a href="services.html">Services</a></li>
+                                                        <li><a href="pkgprice.html">Packages</a></li>
+                                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                                        <li><a href="contactus.html">Contact Us</a></li>
+                                                        <li><a href="404error.html">404 Error</a></li>
+                                                        <li><a href="comingsoon.html">Coming Sooon</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li className="menu-item-has-children">
+                                                    <a href="javascript:void(0);">Services</a>
+                                                    <ul className="sub-menu">
+                                                        <li><a href="newsv1.html">Blog Standard</a></li>
+                                                        <li><a href="newsv2.html">Blog Classic</a></li>
+                                                        <li><a href="newsv3.html">Blog sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li className="menu-item-has-children">
+                                                    <a href="javascript:void(0);">Contact</a>
+                                                    <ul className="sub-menu">
+                                                        <li><a href="newsv1.html">Blog Standard</a></li>
+                                                        <li><a href="newsv2.html">Blog Classic</a></li>
+                                                        <li><a href="newsv3.html">Blog sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="dashboard.html">Events</a></li>
                                             </ul>
                                         </div>
                                     </nav>
@@ -64,8 +149,8 @@ export default class Home extends Component {
 		**************************************/}
                     <div className="listar-homebannerslider">
                         <div id="listar-homeslider" className="listar-homeslider owl-carousel">
-                            <div className="item"><figure><img src="images/slider/img-01.jpg" alt="image description" /></figure></div>
-                            <div className="item"><figure><img src="images/slider/img-02.jpg" alt="image description" /></figure></div>
+                            <div className="item"><figure><img src="http://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/revslider/homeslider1/slider-2.jpg" alt="image description" /></figure></div>
+                            <div className="item"><figure><img src="http://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/revslider/homeslider1/slider-2.jpg" alt="image description" /></figure></div>
                             <div className="item"><figure><img src="images/slider/img-03.jpg" alt="image description" /></figure></div>
                             <div className="item"><figure><img src="images/slider/img-04.jpg" alt="image description" /></figure></div>
                             <div className="item"><figure><img src="images/slider/img-05.jpg" alt="image description" /></figure></div>
@@ -81,12 +166,11 @@ export default class Home extends Component {
                                             <form className="listar-formtheme listar-formsearchlisting">
                                                 <fieldset>
                                                     <div className="form-group listar-inputwithicon">
-                                                        <i className="icon-layers" />
+                                                        <i class="far fa-user"></i>
                                                         <div className="listar-select">
                                                             <select id="listar-categorieschosen" className="listar-categorieschosen listar-chosendropdown">
-                                                                <option className="icon-entertainment">Bệnh Nhân</option>
-                                                                <option className="icon-entertainment">Bác Sĩ</option>
-                                                                
+                                                                <option className="icon-entertainment">Patient</option>
+                                                                <option className="icon-entertainment">Doctor</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -98,7 +182,7 @@ export default class Home extends Component {
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <button type="button" className="listar-btn listar-btngreen">Search Profile</button>
                                                 </fieldset>
                                             </form>
@@ -120,116 +204,13 @@ export default class Home extends Component {
 			**************************************/}
                         <section className="listar-sectionspace listar-haslayout">
                             <div className="container">
-                                <div className="row">
-                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div className="listar-sectionhead">
-                                            <div className="listar-sectiontitle">
-                                                <h2>Explore This City</h2>
-                                            </div>
-                                            <div className="listar-description">
-                                                <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra doloremque laudantium, totam rem aperiam</p>
-                                            </div>
-                                        </div>
+                                <div className="listar-sectionhead">
+                                    <div className="listar-sectiontittle">
+                                        <h2>List Of Patient History</h2>
                                     </div>
-                                    <div className="listar-themeposts listar-categoryposts">
-                                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                            <div className="listar-themepost listar-categorypost">
-                                                <figure className="listar-featuredimg">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="images/post/img-01.jpg" alt="image description" />
-                                                        <div className="listar-contentbox">
-                                                            <div className="listar-postcontent">
-                                                                <span className="listar-categoryicon listar-flip"><i className="icon-tourism" /></span>
-                                                                <h3>Appartments</h3>
-                                                                <h4>Tourism</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                            <div className="listar-themepost listar-categorypost">
-                                                <figure className="listar-featuredimg">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="images/post/img-02.jpg" alt="image description" />
-                                                        <div className="listar-contentbox">
-                                                            <div className="listar-postcontent">
-                                                                <span className="listar-categoryicon listar-flip"><i className="icon-foods" /></span>
-                                                                <h3>Restaurant</h3>
-                                                                <h4>Food and Drinks</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                            <div className="listar-themepost listar-categorypost">
-                                                <figure className="listar-featuredimg">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="images/post/img-03.jpg" alt="image description" />
-                                                        <div className="listar-contentbox">
-                                                            <div className="listar-postcontent">
-                                                                <span className="listar-categoryicon listar-flip"><i className="icon-nightlife" /></span>
-                                                                <h3>Dance Floor</h3>
-                                                                <h4>Night Life</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                            <div className="listar-themepost listar-categorypost">
-                                                <figure className="listar-featuredimg">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="images/post/img-04.jpg" alt="image description" />
-                                                        <div className="listar-contentbox">
-                                                            <div className="listar-postcontent">
-                                                                <span className="listar-categoryicon listar-flip"><i className="icon-entertainment" /></span>
-                                                                <h3>Cinema</h3>
-                                                                <h4>Entertainment</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                            <div className="listar-themepost listar-categorypost">
-                                                <figure className="listar-featuredimg">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="images/post/img-05.jpg" alt="image description" />
-                                                        <div className="listar-contentbox">
-                                                            <div className="listar-postcontent">
-                                                                <span className="listar-categoryicon listar-flip"><i className="icon-localservice" /></span>
-                                                                <h3>Motor Mechanics</h3>
-                                                                <h4>Local Services</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                            <div className="listar-themepost listar-categorypost">
-                                                <figure className="listar-featuredimg">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="images/post/img-06.jpg" alt="image description" />
-                                                        <div className="listar-contentbox">
-                                                            <div className="listar-postcontent">
-                                                                <span className="listar-categoryicon listar-flip"><i className="icon-healthfitness" /></span>
-                                                                <h3>Gym</h3>
-                                                                <h4>Health and Fitness</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <ListPatientHistory />
                                 </div>
+
                             </div>
                         </section>
                     </main>
