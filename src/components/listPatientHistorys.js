@@ -12,7 +12,7 @@ export default class ListPatientHistory extends Component {
                                     <div id="listar-testimonials" className="listar-testimonials listar-testimonialsvtwo">
                                         <div className="listar-testimonial" style={{ width: '60%', marginLeft: '19%' }}>
                                             <div className="listar-testimonialholder">
-                                                <span class="listar-iconquote"><img src="images/icons/icon-06.png" alt="image description" /></span>
+                                                <span class="listar-iconquote" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}><i class="fas fa-file-alt text-white" style={{ color: 'white', fontSize: '2em' }}></i></span>
                                                 <div className="listar-reviewcontent">
                                                     <div className="listar-reviewhead">
                                                         <div className="listar-reviewheading">
