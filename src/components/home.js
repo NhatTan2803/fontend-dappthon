@@ -177,8 +177,8 @@ export default class Home extends Component {
                                                     <div className="form-group listar-inputwithicon">
                                                         <i className="icon-global" />
                                                         <div className="listar-select listar-selectlocation">
-                                                            <select id="listar-locationchosen" className="listar-locationchosen">
-                                                                <option>Address </option>
+                                                            <select id="listar-locationchosen" className="listar-locationchosen ">
+                                                                <option>Address</option>
                                                             </select>
                                                         </div>
                                                     </div>
